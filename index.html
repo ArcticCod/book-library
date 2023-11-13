@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="head-left">Alex Reading List</div>
+        <div class="head-right">
+            <dialog class="dialog">
+                <div class="dialog-container">
+                    <button class="close">Close</button>
+                    <p>Please add a new book</p>
+                    <form class="book-form" action="">
+                        <ul class="list">
+                            <li>
+                                <label for="title">Title:</label>
+                                <input required type="text" id="title" placeholder="Title">
+                            </li>
+                            <li>
+                                <label for="author">Author:</label>
+                                <input required type="text" id="author" placeholder="Author">
+                            </li>
+                            <li>
+                                <label for="pages">Page Count:</label>
+                                <input required type="number" min="1" id="pages" placeholder="Page Count">
+                            </li>
+                            <li>
+                                <label for="read">Read?</label>
+                                <input required type="checkbox" id="read" placeholder="Read before?">
+                            </li>
+                        </ul>
+                        <button type="submit">Create</button>
+                    </form>
+                </div>
+            </dialog>
+            <button class="addBtn">Add New</button>
+        </div>
+    </div>
+    <div class="library">
+        <div class="library-title">
+            <h2>Your Books</h2>
+        </div>
+        <div class="box-grid">
+            <!-- <div class="box">
+                <p class="bookTitle">Harry Pooter</p>
+                <p>Written by: God</p>
+                <p>Length: 656548 pages</p>
+                <p>Completed y/n</p>
+                <button class="delete">X</button>
+            </div> -->
+        </div>    
+    </div>
+</div>
+    
+</body>
+</html>
